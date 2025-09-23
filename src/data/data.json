@@ -1,0 +1,22 @@
+{
+  "languages": ["English", "Spanish", "French"],
+  "minutesPublished": 32850,
+  "shortsExtractable": 612,
+  "themes": ["Travel ✈️", "Lifestyle 🪴", "Sport 🥋"],
+  "watchTimeMonthly": [
+    { "month": "Jan", "expanded": 12000, "original": 9000 },
+    { "month": "Feb", "expanded": 14500, "original": 10000 },
+    { "month": "Mar", "expanded": 17000, "original": 12000 },
+    { "month": "Apr", "expanded": 21000, "original": 14000 },
+    { "month": "May", "expanded": 25000, "original": 16500 },
+    { "month": "Jun", "expanded": 29500, "original": 19000 }
+  ],
+  "platforms": [
+    { "name": "YouTube", "videos": 145, "watchTime": 34000 },
+    { "name": "Instagram", "videos": 145, "watchTime": 34000 },
+    { "name": "TikTok", "videos": 145, "watchTime": 34000 },
+    { "name": "Facebook", "videos": 145, "watchTime": 34000 },
+    { "name": "YouTube", "videos": 145, "watchTime": 34000 },
+    { "name": "YouTube", "videos": 145, "watchTime": 34000 }
+  ]
+}
