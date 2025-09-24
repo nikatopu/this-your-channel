@@ -17,6 +17,12 @@
     { "name": "TikTok", "videos": 145, "watchTime": 34000 },
     { "name": "Facebook", "videos": 145, "watchTime": 34000 },
     { "name": "YouTube", "videos": 145, "watchTime": 34000 },
-    { "name": "YouTube", "videos": 145, "watchTime": 34000 }
+    { "name": "YouTube", "videos": 145, "watchTime": 34000 },
+    { "name": "French", "videos": 145, "watchTime": 34000 },
+    { "name": "French", "videos": 145, "watchTime": 34000 },
+    { "name": "Japanese", "videos": 145, "watchTime": 34000 },
+    { "name": "Indian", "videos": 145, "watchTime": 34000 },
+    { "name": "Hello", "videos": 145, "watchTime": 34000 },
+    { "name": "World", "videos": 145, "watchTime": 34000 }
   ]
 }
