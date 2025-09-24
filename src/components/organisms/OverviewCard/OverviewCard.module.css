@@ -6,6 +6,7 @@
 
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.6);
 
   display: flex;
   align-items: center;
@@ -13,9 +14,204 @@
 }
 
 .content {
-  width: 100%;
-  max-width: 40em;
+  /* Position relative so we can use percentages with abs position on children */
+  position: relative;
 
-  height: 100%;
-  max-height: 30em;
+  width: 100%;
+  max-width: 60em;
+
+  height: 45em;
+  max-height: 100svh;
+
+  border-radius: 2em;
+
+  background-color: white;
+  background-image: url("/resources/modal/overview-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0px 3px 3px -1.5px #0a0d120a;
+  box-shadow: 0px 8px 8px -4px #0a0d120a;
+  box-shadow: 0px 20px 24px -4px #0a0d120a;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.profileVideo {
+  border-radius: 0 0 55% 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+
+  cursor: default;
+  pointer-events: none;
+}
+
+.profileImage {
+  background-color: #dfc2c0;
+  border-radius: 50%;
+  border: 0.5em solid white;
+
+  width: 10em;
+  height: 10em;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -54%);
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+.cardTitle {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.statPill,
+.themePills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  z-index: 1;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+
+  padding: 0.75em 1.1em;
+  border-radius: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
+  width: max-content;
+  max-width: 80vw;
+
+  font-size: 1.2em;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.statPill:hover,
+.themePills:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.flagsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
+
+  width: max-content;
+}
+
+.languages {
+  position: absolute;
+  top: 25%;
+  left: 18%;
+}
+
+.minutes {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+
+  max-width: 12em;
+}
+
+.shorts {
+  position: absolute;
+  top: 44%;
+  right: 7%;
+
+  max-width: 12em;
+}
+
+.themes {
+  position: absolute;
+  top: 70%;
+  right: 15%;
+}
+
+.themesContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cutOffWithDots {
+  display: inline-block;
+  max-width: 25ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nextButton {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+
+  transform: translate(-50%, 50%);
+
+  background-color: black;
+  color: white;
+
+  border: none;
+  border-radius: 5em;
+  padding: 0.5em 4.5em;
+  font-size: 1.2em;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.nextButton:hover {
+  background-color: #222;
+  transform: translate(-50%, 45%) scale(1.05);
+}
+
+@media (max-width: 600px), (max-height: 500px) {
+  .content {
+    font-size: 0.6em;
+  }
+
+  .shortsIcon {
+    width: 2em;
+    height: auto;
+  }
+
+  .languages {
+    top: 20%;
+    left: 2%;
+  }
+
+  .shorts {
+    top: 29%;
+    right: 2%;
+  }
+
+  .minutes {
+    top: 60%;
+    left: 2%;
+  }
+
+  .themes {
+    top: 70%;
+    right: 3%;
+  }
 }
