@@ -35,6 +35,7 @@ The application will be available at `http://localhost:5173` (Not on port 3000 a
 *   I used `recharts` as the "small chart lib OK" because it's lightweight and has great documentation (and faster than handcrafting a new chart).
 *   For the flags and the app icons I used custom SVGs, for other things like themes I used emojis.
 *   For some parts of the overview I used png-s because it would be easier (and, let's be honest, more realistic) to export them and use them as the background image then trying to replicate them using pure CSS.
+*   On the design, the overview is a modal (which is just an additional Atom component), but you asked for the overview and the analytics to be different directories, so I went with my intuition and the background of the Overview project doesn't show Analytics. For it to show analytics it would be easy, since I would just have to put the component in the background, which would cause data rendering for no reason or I would have to put a screenshot in the back, which would be a bit weird. 
 
 ## If I Had One More Hour
 
