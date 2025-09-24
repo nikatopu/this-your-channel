@@ -11,6 +11,34 @@
   margin-bottom: 1em;
 }
 
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+
+    text-align: center;
+  }
+
+  .header input {
+    width: 100%;
+    margin: 0 2em;
+
+    box-sizing: border-box;
+  }
+
+  .platformItem {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  .platformItem {
+    font-size: 0.6em;
+  }
+}
+
 .languageCount {
   font-weight: 500;
   color: #555;

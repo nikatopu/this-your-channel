@@ -19,13 +19,16 @@
 
   width: 100%;
   max-width: 60em;
+  margin: 2em 2em;
 
   height: 45em;
   max-height: 100svh;
 
   border-radius: 2em;
 
-  background-color: white;
+  transition: background-color 0.3s ease-in-out;
+
+  background-color: var(--background-color);
   background-image: url("/resources/modal/overview-background.png");
   background-size: cover;
   background-position: center;
@@ -75,6 +78,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  text-align: center;
 }
 
 .statPill,
@@ -168,8 +172,8 @@
 
   transform: translate(-50%, 50%);
 
-  background-color: black;
-  color: white;
+  background-color: var(--text-color);
+  color: var(--background-color);
 
   border: none;
   border-radius: 5em;
@@ -185,7 +189,7 @@
   transform: translate(-50%, 45%) scale(1.05);
 }
 
-@media (max-width: 600px), (max-height: 500px) {
+@media (max-width: 700px), (max-height: 500px) {
   .content {
     font-size: 0.6em;
   }
@@ -211,7 +215,38 @@
   }
 
   .themes {
-    top: 70%;
+    top: 72%;
+    right: 3%;
+  }
+}
+
+@media (max-width: 400px), (max-height: 400px) {
+  .content {
+    font-size: 0.5em;
+  }
+
+  .shortsIcon {
+    width: 1.5em;
+    height: auto;
+  }
+
+  .languages {
+    top: 18%;
+    left: 2%;
+  }
+
+  .shorts {
+    top: 32%;
+    right: 2%;
+  }
+
+  .minutes {
+    top: 58%;
+    left: 2%;
+  }
+
+  .themes {
+    top: 75%;
     right: 3%;
   }
 }

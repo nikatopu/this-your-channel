@@ -5,13 +5,11 @@
 .paragraph {
   font-size: 1em;
   line-height: 1.5;
-  color: #333;
 }
 
 .heading {
   font-size: 1.5em;
   line-height: 1.2;
-  color: #111;
 }
 
 .paragraph.small {
