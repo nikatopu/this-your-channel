@@ -20,7 +20,6 @@ export default function OverviewCard({ data }) {
         <Text
           text="Your Channel Overview"
           type="heading"
-          size="small"
           className={style.cardTitle}
         />
 
@@ -71,7 +70,8 @@ export default function OverviewCard({ data }) {
           <span className={style.themesContent}>
             Top themes: &nbsp;
             <strong className={style.cutOffWithDots}>
-              {themes.join(", ")}, Lorem ipsum for testing the layout of the card
+              {themes.join(", ")}, Lorem ipsum for testing the layout of the
+              card
             </strong>
           </span>
         </div>
